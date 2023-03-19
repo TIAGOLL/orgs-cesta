@@ -10,7 +10,7 @@ const width = Dimensions.get('screen').width; //pega a dimensão da tela do apar
 export default function Topo({ titulo }) {
     return <>
         <Image source={topo} style={styles.topo} />
-        <Texto style={styles.titulo}>{ titulo }</Texto>
+        <Texto style={styles.titulo}>{titulo}</Texto>
     </>
 }
 
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 578 / 768 * width,
     },
-      
+
     titulo: {
         width: '100%',
         position: 'absolute',

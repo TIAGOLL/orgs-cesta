@@ -8,11 +8,11 @@ import Detalhes from './componentes/Detalhes';
 
 
 //layout da página
-export default function Cesta({topo, detalhes}) {
+export default function Cesta({ topo, detalhes }) {
   return <>
-    <Topo {...topo}/> 
-    <View style={styles.cesta}> 
-      <Detalhes {...detalhes}/>
+    <Topo {...topo} />
+    <View style={styles.cesta}>
+      <Detalhes {...detalhes} />
     </View>
   </>
 }
