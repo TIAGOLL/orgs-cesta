@@ -4,15 +4,15 @@ import { View, Image, StyleSheet } from "react-native";
 import Texto from '../../../componentes/Texto'; //importa o arquivo onde está as fontes, assim permitindo ser usada nas telas
 import Logo from '../../../../assets/logo.png'; //importa a imagem de logo da fazenda
 
-export default function Detalhes() {
+export default function Detalhes({ nome, nomeFazenda, logoFazenda, preco, descricao }) {
     return <>
-        <Texto style={styles.nome}>Cesta de Verduras</Texto>
+        <Texto style={styles.nome}>{ nome }</Texto>
         <View style={styles.fazenda}>
-        <Image source={Logo} style={styles.imagemFazenda} />
-        <Texto style={styles.nomeFazenda}>Jenny Jack Farm</Texto>
+        <Image source={ logoFazenda } style={styles.imagemFazenda} />
+        <Texto style={styles.nomeFazenda}>{ nomeFazenda }</Texto>
         </View>
-        <Texto style={styles.descricao}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</Texto>
-        <Texto style={styles.preco}>R$ 40,00</Texto>
+        <Texto style={styles.descricao}>{ descricao }</Texto>
+        <Texto style={styles.preco}>{ preco }</Texto>
     </>
 }
 

@@ -1,9 +1,14 @@
 //aquivo onde ficam o layout da pagina, configurações de fontes, e cofigurações do app em geral
 
 import React from 'react';
+
 import { StatusBar, SafeAreaView, View } from 'react-native'; //importa as tags de marcação do JSX
-import Cesta from './src/telas/cesta/index.js'; //importa a função que inicia o app
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from '@expo-google-fonts/montserrat'; //importa as fontes depois de baixa-las
+
+import Cesta from './src/telas/cesta'; //importa a função que inicia o app
+import Mock from './src/mocks/cesta' //importa o objeto de texto
+
+
 
 export default function App() {
   const [fonteCarregada] = useFonts({
@@ -18,7 +23,7 @@ export default function App() {
     return (
       <SafeAreaView>
         <StatusBar />
-        <Cesta />
+        <Cesta {...Mock}/>
       </SafeAreaView>
     ); //define o layout
 }

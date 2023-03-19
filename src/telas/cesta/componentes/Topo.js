@@ -7,10 +7,10 @@ import topo from '../../../../assets/topo.png'; //importa imagens para serem usa
 
 const width = Dimensions.get('screen').width; //pega a dimensão da tela do aparelho do usuário
 
-export default function Topo() {
+export default function Topo({ titulo }) {
     return <>
         <Image source={topo} style={styles.topo} />
-        <Texto style={styles.titulo}>Detalhe da cesta</Texto>
+        <Texto style={styles.titulo}>{ titulo }</Texto>
     </>
 }
 
