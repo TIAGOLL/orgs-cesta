@@ -1,5 +1,5 @@
 {
-  "name": "orgshooks",
+  "name": "orgsHooks",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@react-native-community/cli-platform-android": "^10.2.0",
     "react": "18.2.0",
     "react-native": "0.71.4"
   },
